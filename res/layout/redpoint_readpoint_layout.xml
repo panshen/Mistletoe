@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rdp_body"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:gravity="right|top" >
+
+    <LinearLayout
+        android:id="@+id/rdp_readPointLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:background="@drawable/redpoint_read_point"
+        android:gravity="center_vertical|center_horizontal"
+        android:minWidth="20dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/rdp_readPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rdp_readPointSmallLinear"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/redpoint_read_point"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

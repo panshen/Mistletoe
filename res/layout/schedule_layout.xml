@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/temp_MistletoeBackground"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/schdeule_List"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:divider="#f3f3f3"
+        android:dividerHeight="8dp" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#33000000" />
+
+    <LinearLayout
+        android:id="@+id/schdeule_editArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorSwitch_white"
+        android:gravity="top|center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/schdeule_MoreFunction"
+            style="@style/Schdeule_EditSchedule_Button"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/open_function" />
+
+        <LinearLayout 
+            android:layout_marginTop="8dp"
+            style="@style/Schdeule_EditSchedule_Text"
+            android:orientation="vertical" 
+            >
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/schdeule_EditSchdeule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                 android:background="#54707e"
+                />
+            
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/schdeule_ChoosHelper"
+            style="@style/Schdeule_EditSchedule_Button"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/add_group" />
+
+        <ImageView
+            android:id="@+id/schdeule_Send"
+            style="@style/Schdeule_EditSchedule_Button"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/send" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/schdeule_Fuction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/schdeule_Fuction_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/schdeule_Fuction_Button_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/app_name"
+                        android:cropToPadding="true"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/iconfont_tupian" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="图片"
+                        android:textColor="#607d8b"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/schdeule_Fuction_Button_Camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/app_name"
+                        android:cropToPadding="true"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/sd" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="照相机"
+                        android:textColor="#607d8b"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/schdeule_Fuction_Button_Rem"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/app_name"
+                        android:cropToPadding="true"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/clock" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="定时提醒"
+                        android:textColor="#607d8b"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/schdeule_Fuction_Button_Cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/app_name"
+                        android:cropToPadding="true"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/cost_deep" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="添加费用"
+                        android:textColor="#607d8b"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/schdeule_Fuction_Button_Task"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/app_name"
+                        android:cropToPadding="true"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/task" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="创建任务"
+                        android:textColor="#607d8b"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/schdeule_Fuction_Button_Location"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/app_name"
+                        android:cropToPadding="true"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="发送定位"
+                        android:textColor="#607d8b"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/schdeule_Fuction_Rem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/schdeule_Fuction_Rem_ChooseTime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="bottom|left" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/clock" />
+
+                <TextView
+                    android:id="@+id/schdeule_Fuction_Rem_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:padding="8dp"
+                    android:text="2015年3月24日星期四" />
+
+                <TextView
+                    android:id="@+id/schdeule_Fuction_Rem_Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:padding="8dp"
+                    android:text="14:30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="bottom|right" >
+
+                <TextView
+                    android:id="@+id/schdeule_Fuction_Rem_Send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:gravity="bottom|right"
+                    android:padding="8dp"
+                    android:text="发送"
+                    android:textColor="#008B8B" />
+
+                <TextView
+                    android:id="@+id/schdeule_Fuction_Rem_Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|right"
+                    android:padding="8dp"
+                    android:text="取消"
+                    android:textColor="#006400" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

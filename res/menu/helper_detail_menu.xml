@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/sign"
+        android:title="备注"/>
+    <item
+        android:id="@+id/toBlack"
+        android:title="加入黑名单"/>
+
+</menu>

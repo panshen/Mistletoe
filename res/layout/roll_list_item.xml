@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/roll_list_item_imageView_first"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/roll_list_item_imageView_second"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/dice2" />
+
+    <ImageView
+        android:id="@+id/roll_list_item_imageView_third"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/dice3" />
+
+    <ImageView
+        android:id="@+id/roll_list_item_imageView_fourth"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/dice4" />
+
+    <ImageView
+        android:id="@+id/roll_list_item_imageView_fifth"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/dice5" />
+
+    <ImageView
+        android:id="@+id/roll_list_item_imageView_sixth"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        
+        android:src="@drawable/dice6" />
+
+</LinearLayout>

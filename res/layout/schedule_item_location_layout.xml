@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/scA_itemAll" >
+
+    <LinearLayout style="@style/scA_itemBody" >
+
+        <LinearLayout style="@style/sc_itemLeft" >
+
+            <include layout="@layout/schedule_item_cu_left_layout" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/sc_itemRight" >
+
+            <LinearLayout style="@style/sc_itemRTop" >
+
+                <include layout="@layout/schedule_item_cu_rtop_layout" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sc_itemRContent" >
+
+                <!-- 在这里写下该页的内容 -->
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/sci_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:clickable="true" />
+
+                <TextView
+                    android:id="@+id/textView_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/sc_itemRBottom" >
+
+                <include layout="@layout/schedule_item_cu_rbottom_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/scA_itemMoreFunction" >
+
+        <include layout="@layout/schedule_item_cu_morefunciton_layout" />
+    </LinearLayout>
+
+</LinearLayout>

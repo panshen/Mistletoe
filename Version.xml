@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VersionHistory>
+
+    <Version
+        version:name="2.0.11"
+        version:appValue="14"
+        version:dbVersion="14"
+        /> 
+    <Version
+        version:name="2.0.10"
+        version:appValue="13"
+        version:dbVersion="13"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.10"
+        version:releaseTime="2015/08/07"
+        /> 
+    <Version
+        version:name="2.0.9"
+        version:appValue="12"
+        version:dbVersion="12"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.9"
+        version:releaseTime="2015/07/31"
+        /> 
+    <Version
+        version:name="2.0.8.1"
+        version:appValue="11"
+        version:dbVersion="11"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.8.1"
+        version:releaseTime="2015/07/27"
+        /> 
+    <Version
+        version:name="2.0.8"
+        version:appValue="10"
+        version:dbVersion="10"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.8"
+        version:releaseTime="2015/07/27" /> 
+    <Version
+        version:name="2.0.7"
+        version:appValue="9"
+        version:dbVersion="9"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.7"
+        version:releaseTime="2015/07/20" /> 
+
+    <Version
+        version:name="2.0.6"
+        version:appValue="8"
+        version:dbVersion="8"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.6"
+        version:releaseTime="2015/07/13" />
+    <Version
+        version:name="2.0.5"
+        version:appValue="7"
+        version:dbVersion="7"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.5"
+        version:releaseTime="2015/07/03" />
+
+    <Version
+        version:name="2.0.4.1"
+        version:appValue="6"
+        version:dbVersion="6"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.4.1"
+        version:releaseTime="2015/06/25" />
+
+    <Version
+        version:name="2.0.4"
+        version:appValue="5"
+        version:dbVersion="5"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.4"
+        version:releaseTime="2015/06/10" />
+
+    <Version
+        version:name="2.0.3"
+        version:appValue="4"
+        version:dbVersion="4"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.3"
+        version:releaseTime="2015/06/09" />
+
+    <Version
+        version:name="2.0.2"
+        version:appValue="3"
+        version:dbVersion="3"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.2"
+        version:releaseTime="2015/05/29" />
+
+    <Version
+        version:name="2.0.1"
+        version:appValue="2"
+        version:dbVersion="2"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.1"
+        version:releaseTime="2015/05/22" />
+
+    <Version
+        version:name="2.0.0"
+        version:appValue="1"
+        version:dbVersion="1"
+        version:releaseBranch="https://github.com/4helperSource/Mistletoe/tree/Version_2.0.0"
+        version:releaseTime="2015/05/15" />
+
+</VersionHistory>

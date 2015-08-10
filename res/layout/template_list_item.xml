@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/template_list_tiem_textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/template_item_text_back"
+            android:gravity="center_vertical|right"
+            android:padding="5dip"
+            android:paddingRight="40dip"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <com.helper.mistletoe.v.snaimageview.v2.SnaImageViewV2
+            android:id="@+id/template_list_tiem_imageButton_template"
+            android:layout_width="38dip"
+            android:layout_height="38dip"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+</LinearLayout>

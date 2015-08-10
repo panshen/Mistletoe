@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dip"
+    android:layout_centerInParent="true" >
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="43dp"
+	    android:orientation="vertical" >
+
+		<com.helper.mistletoe.wheel.WheelView
+		    android:id="@+id/wheelView"
+		    android:background="#ffffff"
+		    android:layout_width="300dip"
+		    android:layout_height="150dip"
+		    android:layout_gravity="center" />
+
+		<Button
+		    android:id="@+id/wheel_button"
+		    android:background="#7fd8f3"
+		    android:layout_width="300dip"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"		    
+		    android:text="确定"
+		    android:textColor="#ffffff" />
+
+	</LinearLayout>
+
+</RelativeLayout>

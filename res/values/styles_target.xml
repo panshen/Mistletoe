@@ -1,0 +1,43 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 上下半高 -->
+    <style name="tar_HalfUpperLower_TargetItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- 上下半高.单行文字 -->
+    <style name="tar_HalfUpperLower_TargetItem.SingleLineText">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 左右等比排列 -->
+    <style name="tar_GeometricLeftRight_TargetItem" parent="tar_HalfUpperLower_TargetItem.SingleLineText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/h3_textSize</item>
+        <item name="android:textColor">@color/darkgrey</item>
+    </style>
+
+    <!-- 20*20的控件 -->
+    <style name="tar_BottomOption_TargetItem">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:contentDescription">@string/app_name</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- 20高的控件 -->
+    <style name="tar_BottomOptionTest_TargetItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:contentDescription">@string/app_name</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <item name="sistandard_leftArea" type="id">false</item>
+    <item name="sistandard_RightArea" type="id">false</item>
+    <item name="sistandard_RTopArea" type="id">false</item>
+    <item name="sistandard_RCenterArea" type="id">false</item>
+    <item name="sistandard_RBottomArea" type="id">false</item>
+    <item name="sisimple_Body" type="id">false</item>
+    <item name="sisimple_MoreFunciton" type="id">false</item>
+
+</resources>

@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/zBody"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/zDot_01"
+        style="@style/sPD_dot"
+        android:background="@drawable/welcompage_spd_noselect" />
+
+    <TextView
+        android:id="@+id/zDot_02"
+        style="@style/sPD_dot"
+        android:background="@drawable/welcompage_spd_noselect" />
+
+    <TextView
+        android:id="@+id/zDot_03"
+        style="@style/sPD_dot"
+        android:background="@drawable/welcompage_spd_noselect" />
+
+</LinearLayout>

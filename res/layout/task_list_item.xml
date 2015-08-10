@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal" >
+
+        <com.helper.mistletoe.v.MyCheckBox
+            android:id="@+id/task_list_item_checkBox"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:button="@null"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/task_list_item_textView_name"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dip"
+            android:textSize="12sp" />
+
+        <com.helper.mistletoe.v.snaimageview.v2.SnaImageViewV2
+            android:id="@+id/task_list_item_imageView_head"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:padding="5dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/task_list_item_imageView_weight"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:cropToPadding="true"
+            android:padding="6dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/weight_one" />
+    </LinearLayout>
+
+</LinearLayout>

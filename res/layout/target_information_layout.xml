@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/target_information_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/temp_MistletoeTextBackgroundColor"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/main_Cover_Lin"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" >
+
+            <com.helper.mistletoe.v.snaimageview.v2.SnaImageViewV2
+                android:id="@+id/main_Cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_cover" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="#80A9A9A9" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/main_TargetTypeTip"
+                    style="@style/SingleLineText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="此目标为公开讨论型目标"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h2_textSize" />
+
+                <LinearLayout
+                    android:id="@+id/main_Appreciate_Lin"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/main_Appreciate"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/app_name"
+                        android:cropToPadding="true"
+                        android:padding="3dp"
+                        android:src="@drawable/appreciate" />
+
+                    <TextView
+                        android:id="@+id/main_AppreciateNumber"
+                        style="@style/SingleLineText"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/h2_textSize" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/main_FriendlyTarget_Lin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/main_TargetAgree"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/rounded_frame_green"
+                android:gravity="center"
+                android:text="同意"
+                android:textColor="@color/green"
+                android:textSize="@dimen/h3_textSize" />
+
+            <Button
+                android:id="@+id/main_TargetRefuse"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/rounded_frame_tomato"
+                android:gravity="center"
+                android:text="拒绝"
+                android:textColor="@color/tomato"
+                android:textSize="@dimen/h3_textSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_MarketTarget_Lin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/main_TargetLast"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:gravity="start|center_vertical"
+                android:scaleType="centerInside"
+                android:src="@drawable/last"
+                android:textSize="@dimen/h3_textSize" />
+
+            <Button
+                android:id="@+id/main_TargetJoin"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/rounded_frame_grey"
+                android:gravity="center"
+                android:text="进入沟通"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/h3_textSize" />
+
+            <ImageButton
+                android:id="@+id/main_TargetNext"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:gravity="start|center_vertical"
+                android:scaleType="centerInside"
+                android:src="@drawable/next"
+                android:textSize="@dimen/h3_textSize" />
+        </LinearLayout>
+
+        <com.helper.mistletoe.v.choosehelper.ChooseHelper
+            android:id="@+id/main_progressBarwssssssss"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:contentDescription="@string/app_name"
+            android:orientation="vertical"
+            android:src="#50C0C0C0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dip"
+                android:text="目标概况"
+                android:textColor="#cc222222"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/target_information_layout_textview_cost_details"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dip"
+                android:text="查看费用详情"
+                android:textColor="#cc222222"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" >
+
+            <TableRow
+                android:id="@+id/target_information_layout_tableRow_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dip"
+                    android:text="费用" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/target_information_layout_textview_cost_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="权重" />
+
+                    <ProgressBar
+                        android:id="@+id/target_information_layout_progressBar_cost_up"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:max="100"
+                        android:progress="30"
+                        android:progressDrawable="@drawable/progress_information_cost_budget" />
+
+                    <ProgressBar
+                        android:id="@+id/target_information_layout_progressBar_cost_down"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:max="100"
+                        android:progress="20"
+                        android:progressDrawable="@drawable/progress_information_cost_expenditure" />
+
+                    <TextView
+                        android:id="@+id/target_information_layout_textview_cost_down"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="权重" />
+                </LinearLayout>
+                 <TextView
+                     android:id="@+id/target_information_layout_textview_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="5dip"
+                    android:text="" />
+                
+            </TableRow>
+
+            <TableRow
+                 android:id="@+id/target_information_layout_tableRow_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:paddingLeft="5dip"
+                    android:text="时间进度" />
+                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <ProgressBar
+                        android:id="@+id/target_information_layout_progressBar_time"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="7dip"
+                        android:max="100"
+                        android:progress="20"
+                        android:progressDrawable="@drawable/progress_information_time" />
+
+                    <TextView
+                        android:id="@+id/target_information_layout_textview_time_down"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="权重" />
+                </LinearLayout>
+                
+                <TextView
+                    android:id="@+id/target_information_layout_textview_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dip"
+                     android:paddingTop="5dip"
+                    android:text="100%" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/target_information_layout_tableRow_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:paddingLeft="5dip"
+                    android:text="任务进度" />
+                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                     <ProgressBar
+                         android:id="@+id/target_information_layout_progressBar_weight"
+                         style="?android:attr/progressBarStyleHorizontal"
+                         android:layout_width="match_parent"
+                         android:layout_height="7dip"
+                         android:max="100"
+                         android:progress="20"
+                         android:progressDrawable="@drawable/progress_information_weight" />
+
+                    <TextView
+                        android:id="@+id/target_information_layout_textview_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="权重" />
+                </LinearLayout>
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:paddingTop="5dip"
+                    android:paddingRight="5dip"
+                    android:text="100%" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="4dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:text="任务版"
+            android:textColor="#cc222222"
+            android:textSize="15sp" />
+
+        <com.helper.mistletoe.v.ListViewForScrollView
+            android:id="@+id/task_list_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="#50C0C0C0"
+            android:dividerHeight="1px" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:contentDescription="@string/app_name"
+            android:orientation="vertical"
+            android:src="#50C0C0C0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/target_information_addTask"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:background="@drawable/add_task" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="点击加号，创建任务"
+                android:textColor="#a9a9a9"
+                android:textSize="@dimen/h3_textSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="start|center_vertical"
+                android:text="选择颜色"
+                android:textSize="@dimen/h3_textSize" />
+
+            <com.helper.mistletoe.v.colorswitch.ColorSwitch_LinearLayout
+                android:id="@+id/main_Color"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="目标描述"
+                android:textColor="@color/temp_MistletoeTextColor"
+                android:textSize="@dimen/h3_textSize" />
+
+            <TextView
+                android:id="@+id/main_TargetContext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:minLines="6"
+                android:padding="2dp"
+                android:textColor="#de000000"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/h2_textSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

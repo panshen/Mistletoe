@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" >
+
+            <gradient
+                android:angle="90"
+                android:endColor="#D3D3D3"
+                android:startColor="#D3D3D3" />
+        </shape>
+    </item>
+    <item>
+        <inset
+            android:drawable="@drawable/mainactivityshape"
+            android:insetBottom="1dp" />
+    </item>
+</layer-list>

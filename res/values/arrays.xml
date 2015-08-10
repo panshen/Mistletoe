@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="OperationGroupLongClick">
+        <item>创建目标</item>
+        <item>修改组信息</item>
+        <item>删除组</item>
+    </string-array>
+    <string-array name="OperationHelperLongClick">
+        <item>创建目标</item>
+        <item>加入组</item>
+        <item>加入黑名单</item>
+        
+    </string-array>
+    <string-array name="TargetDeletedLongClick">
+        <item>恢复</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="TargetHelperLongClick">
+        <item>删除</item>
+    </string-array>
+    <string-array name="NewHelperLongClick">
+        <item>删除</item>
+    </string-array>
+</resources>

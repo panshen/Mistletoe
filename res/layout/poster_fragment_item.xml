@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.helper.mistletoe.v.GridViewItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_helper_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:layout_gravity="center_horizontal|center_vertical" >
+
+    <com.helper.mistletoe.v.snaimageview.v2.SnaImageViewV2
+        android:id="@+id/poster_fragment_item_imageView_head_f"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/poster_fragment_item_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#88252525"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+</com.helper.mistletoe.v.GridViewItemLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/background"
+    android:orientation="horizontal" >
+
+    <com.helper.mistletoe.v.snaimageview.v2.SnaImageViewV2
+        android:id="@+id/srsil_Head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_head" />
+
+    <TextView
+        android:id="@+id/srsil_Name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="王老汉"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/srsil_ReadTime"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:ellipsize="end"
+        android:gravity="right|center_vertical"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="1982年07月11日"
+        android:textColor="@color/black" />
+
+</LinearLayout>

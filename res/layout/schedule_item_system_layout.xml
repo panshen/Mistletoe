@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/scA_itemAll_system_task" >
+
+    <TextView
+        android:id="@+id/sci_systemText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text=""
+        android:textColor="@color/firebrick_t9t"
+        android:textSize="@dimen/h3_textSize" />
+
+    <LinearLayout style="@style/scA_itemMoreFunction" >
+
+        <include layout="@layout/schedule_item_cu_morefunciton_layout" />
+    </LinearLayout>
+
+</LinearLayout>

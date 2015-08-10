@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dip"
+    android:layout_height="30dip"
+    android:background="#e0e0e0"
+    android:clickable="true"
+    >
+    <TextView
+        android:id="@+id/taghorizontal_list_item_textView_name"
+        android:layout_width="60dip"
+        android:layout_height="match_parent"
+         android:layout_margin="1dip"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="16sp" />
+
+</RelativeLayout>

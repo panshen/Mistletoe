@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/scA_itemAll" >
+
+    <LinearLayout style="@style/scA_itemBody" >
+
+        <LinearLayout style="@style/sc_itemLeft" >
+
+            <include layout="@layout/schedule_item_cu_left_layout" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/sc_itemRight" >
+
+            <LinearLayout style="@style/sc_itemRTop" >
+
+                <include layout="@layout/schedule_item_cu_rtop_layout" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sc_itemRContent" >
+
+                <!-- 在这里写下该页的内容 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/app_name"
+                        android:cropToPadding="true"
+                        android:padding="1dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/remind_clock" />
+
+                    <TextView
+                        android:id="@+id/sci_remindTime"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/olivedrab_t9t"
+                        android:textSize="@dimen/h2_textSize" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sci_remindContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3_textSize" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sc_itemRBottom" >
+
+                <include layout="@layout/schedule_item_cu_rbottom_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/scA_itemMoreFunction" >
+
+        <include layout="@layout/schedule_item_cu_morefunciton_layout" />
+    </LinearLayout>
+
+</LinearLayout>

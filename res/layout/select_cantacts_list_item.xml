@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/select_cantacts_list_item_textView_catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#E0E0E0"
+        android:paddingBottom="5dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="5dip"
+        android:text="A"
+        android:textColor="#454545" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+         <com.helper.mistletoe.v.PhotoHead_TextView
+            android:id="@+id/select_cantacts_list_item_photoHeadTextView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/select_cantacts_list_item_textView_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dip"
+                android:textColor="#336598"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/select_cantacts_list_item_textView_account"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dip"
+                android:textColor="#336598"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginRight="30dip"
+            android:gravity="center" >
+
+            <com.helper.mistletoe.v.MyCheckBox
+                android:id="@+id/select_cantacts_list_item_checkBox"
+                android:layout_width="30dip"
+                android:layout_height="30dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

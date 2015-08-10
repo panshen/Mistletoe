@@ -1,0 +1,124 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Schdeule_AdditionalFunctions">
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:cropToPadding">true</item>
+    </style>
+
+    <style name="BackGround">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white_t9t</item>
+    </style>
+
+    <style name="Schdeule_EditSchedule_Text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:minLines">1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Schdeule_EditSchedule_Button">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:cropToPadding">true</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">40dp</item>
+    </style>
+
+    <style name="Schdeule_ItemPlusbutton">
+        <item name="android:background">@color/temp_MistletoeBackground</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/h3_textSize</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="sc_itemLeft">
+        <item name="android:id">@id/sistandard_leftArea</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="sc_itemRight">
+        <item name="android:id">@id/sistandard_RightArea</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="sc_itemRTop">
+        <item name="android:id">@id/sistandard_RTopArea</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <style name="sc_itemRContent">
+        <item name="android:id">@id/sistandard_RCenterArea</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="sc_itemRBottom">
+        <item name="android:id">@id/sistandard_RBottomArea</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="scA_itemBody">
+        <item name="android:id">@id/sisimple_Body</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="scA_itemMoreFunction">
+        <item name="android:id">@id/sisimple_MoreFunciton</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:background">@color/temp_MistletoeBackground</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="scA_itemAll">
+        <item name="android:background">@drawable/shadowed</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="scA_itemAll_system_task">
+        <item name="android:background">#f3f3f3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/temp_MistletoeBackground"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/temp_MistletoeMainColor"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/searchViddddddddew_main_back"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/searchxxxxxView_main_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="目标帮手"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <SearchView
+                android:id="@+id/searchView_main_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/helperList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:contentDescription="@string/app_name"
+            android:divider="#50C0C0C0"
+            android:dividerHeight="1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_helper_helperfragment" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/changeHelper"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_helper_helperfragment" />
+
+</RelativeLayout>

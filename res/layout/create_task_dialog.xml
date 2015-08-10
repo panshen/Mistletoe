@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dip"
+    android:layout_centerInParent="true"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:text="创建任务"
+            android:textColor="#cc222222"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/create_task_dialog_editText_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="请输入任务内容(限30字)"
+            android:maxLength="30"
+            android:paddingLeft="12dp"
+            android:textColor="@color/black" >
+
+            <requestFocus />
+        </EditText>
+
+       
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="重要程度："
+                android:textColor="#cc222222"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/create_task_dialog_textview_linearLayout_weight"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/create_task_dialog_textview_weight_one"
+                    android:layout_width="40dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#cc222222"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/create_task_dialog_textview_weight_two"
+                    android:layout_width="40dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="#cc222222"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/create_task_dialog_textview_weight_three"
+                    android:layout_width="40dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#cc222222"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/create_task_dialog_imageView_weight"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:contentDescription="@string/app_name"
+                android:cropToPadding="true"
+                android:padding="14dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/weight_one" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:text="任务时间:"
+                android:textColor="#cc222222"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/create_task_dialog_textview_startTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal|bottom"
+                    android:padding="8dp"
+                    android:text="开始时间"
+                    android:textColor="#cc222222" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="至"
+                    android:textColor="#222222" />
+                
+
+                <TextView
+                    android:id="@+id/create_task_dialog_textview_endTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal|bottom"
+                    android:padding="8dp"
+                    android:text="结束时间" 
+                    android:textColor="#cc222222"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="任务指派："
+                android:textColor="#cc222222"
+                android:textSize="15sp" />
+
+            <com.helper.mistletoe.wheel.WheelView
+                android:id="@+id/create_task_dialog_wheelView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/create_task_dialog_textview_send"
+                android:layout_width="60dip"
+                android:layout_height="40dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="27dp"
+                android:background="@drawable/button_alert_press"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="#30a163"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/create_task_dialog_textview_cancel"
+                android:layout_width="60dip"
+                android:layout_height="40dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/create_task_dialog_textview_send"
+                android:background="@drawable/button_alert_press"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#d1cf84"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

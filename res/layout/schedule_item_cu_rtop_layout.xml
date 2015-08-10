@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/sistandard_CreaterName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="王老汉"
+            android:textColor="#de000000" />
+
+        <TextView
+            android:id="@+id/sistandard_SendToState"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:textColor="#de000000" />
+
+        <TextView
+            android:id="@+id/sistandard_SendTo"
+            style="@style/SingleLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="铁茄子"
+            android:textColor="#de000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sistandard_TopFlag"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/stick_status" />
+    </LinearLayout>
+
+</merge>

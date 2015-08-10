@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/titlebar"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/target_bt_deleted"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <ImageView
+                android:id="@+id/target_bt_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/button_delated_press" />
+
+            <TextView
+                android:id="@+id/target_bt_tex"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="添加"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/target_bt_waikuang"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/target_title"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="目标"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/target_progressb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/target_title"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/target_bt_add"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <ImageView
+                android:id="@+id/target_bt_addinmg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/button_add_press" />
+
+            <TextView
+                android:id="@+id/target_bt_addtext"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="添加"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.helper.olivine.c.view.MessegeTab
+        android:id="@+id/messegetab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.helper.olivine.c.view.MessegeTab>
+
+    <LinearLayout
+        android:id="@+id/subview_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

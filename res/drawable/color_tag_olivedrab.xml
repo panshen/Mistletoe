@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 单击时的背景图片 -->
+    <item android:state_pressed="true"><shape>
+
+            <!-- 实心 -->
+            <solid android:color="@color/olivedrab" />
+
+            <!-- 圆角 -->
+            <corners android:bottomRightRadius="13dp" android:topRightRadius="13dp" />
+        </shape></item>
+
+    <!-- 默认时的背景图片 -->
+    <item><shape>
+
+            <!-- 实心 -->
+            <solid android:color="@color/olivedrab_t9t" />
+
+            <!-- 圆角 -->
+            <corners android:bottomRightRadius="13dp" android:topRightRadius="13dp" />
+        </shape></item>
+
+</selector>

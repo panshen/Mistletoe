@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+<RelativeLayout
+        android:id="@+id/RelativeLayout_introduce_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:background="@color/main_color"  >
+
+        <RelativeLayout
+            android:id="@+id/feedback_button_back"
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/feedback_textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/feedback_textView_title"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/feedback_listView_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="#ffffff"
+        android:divider="@null"
+        android:stackFromBottom="true" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:gravity="top|center_horizontal"
+        android:orientation="horizontal" >
+
+        <EditText
+             android:id="@+id/feedback_editText_word"
+             style="@style/Schdeule_EditSchedule_Text" />
+
+        <ImageView
+            android:id="@+id/feedback_imageView_send"
+            style="@style/Schdeule_EditSchedule_Button"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/send" />
+    </LinearLayout>
+
+</LinearLayout>

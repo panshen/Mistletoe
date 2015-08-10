@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" >
+
+    <LinearLayout
+        android:id="@+id/main_color_white_Linear"
+        style="@style/ColorShitchCircleLinearout" >
+
+        <TextView
+            android:id="@+id/main_color_white"
+            style="@style/ColorShitchCircle" />
+
+        <TextView
+            android:id="@+id/main_color_white_big"
+            style="@style/ColorShitchCircleBig" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_color_firebrick_Linear"
+        style="@style/ColorShitchCircleLinearout" >
+
+        <TextView
+            android:id="@+id/main_color_firebrick"
+            style="@style/ColorShitchCircle" />
+
+        <TextView
+            android:id="@+id/main_color_firebrick_big"
+            style="@style/ColorShitchCircleBig" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_color_darkorange_Linear"
+        style="@style/ColorShitchCircleLinearout" >
+
+        <TextView
+            android:id="@+id/main_color_darkorange"
+            style="@style/ColorShitchCircle" />
+
+        <TextView
+            android:id="@+id/main_color_darkorange_big"
+            style="@style/ColorShitchCircleBig" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_color_olivedrab_Linear"
+        style="@style/ColorShitchCircleLinearout" >
+
+        <TextView
+            android:id="@+id/main_color_olivedrab"
+            style="@style/ColorShitchCircle" />
+
+        <TextView
+            android:id="@+id/main_color_olivedrab_big"
+            style="@style/ColorShitchCircleBig" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_color_mediumslateblue_Linear"
+        style="@style/ColorShitchCircleLinearout" >
+
+        <TextView
+            android:id="@+id/main_color_mediumslateblue"
+            style="@style/ColorShitchCircle" />
+
+        <TextView
+            android:id="@+id/main_color_mediumslateblue_big"
+            style="@style/ColorShitchCircleBig" />
+    </LinearLayout>
+
+</LinearLayout>

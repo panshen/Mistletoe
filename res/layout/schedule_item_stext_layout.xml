@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/scA_itemAll" >
+
+    <LinearLayout style="@style/scA_itemBody" >
+
+        <LinearLayout style="@style/sc_itemLeft" >
+
+            <include layout="@layout/schedule_item_cu_left_layout" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/sc_itemRight" >
+
+            <LinearLayout style="@style/sc_itemRTop" >
+
+                <include layout="@layout/schedule_item_cu_rtop_layout" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sc_itemRContent" >
+
+                <!-- 在这里写下该页的内容 -->
+
+                <TextView
+                    android:id="@+id/sci_textContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3_textSize" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sc_itemRBottom" >
+
+                <include layout="@layout/schedule_item_cu_rbottom_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/scA_itemMoreFunction" >
+
+        <include layout="@layout/schedule_item_cu_morefunciton_layout" />
+    </LinearLayout>
+
+</LinearLayout>

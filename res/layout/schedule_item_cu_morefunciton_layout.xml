@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/sisimple_Withdraw"
+        style="@style/Schdeule_ItemPlusbutton"
+        android:text="撤回" />
+
+    <TextView
+        android:id="@+id/sisimple_Copy"
+        style="@style/Schdeule_ItemPlusbutton"
+        android:text="复制" />
+
+    <TextView
+        android:id="@+id/sisimple_Top"
+        style="@style/Schdeule_ItemPlusbutton"
+        android:text="置顶" />
+
+</merge>

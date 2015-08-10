@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/group_member_list_tiem_catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#E0E0E0"
+        android:paddingBottom="5dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="5dip"
+        android:text="@string/helper_fragment_item_catalog"
+        android:textColor="#454545" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/group_member_list_tiem_relativeLayout_checkBox"
+            android:layout_width="56dip"
+            android:layout_height="56dip"
+            android:gravity="center" >
+
+            <com.helper.mistletoe.v.MyCheckBox
+                android:id="@+id/group_member_list_tiem_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="56dip"
+            android:layout_height="56dip"
+            android:gravity="center" >
+
+            <com.helper.mistletoe.v.snaimageview.v2.SnaImageViewV2
+                android:id="@+id/group_member_list_tiem_head"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/group_member_list_tiem_textView_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingTop="2dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/group_member_list_tiem_textView_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="10dip"
+                android:paddingTop="1dp"
+                android:textColor="#a9a9a9"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

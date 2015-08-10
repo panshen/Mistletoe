@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/special_topic"
+        android:title="修改"/>
+    <item
+        android:id="@+id/elite"
+        android:title="申请关闭"/>
+    <item
+        android:id="@+id/cloning"
+        android:title="目标克隆"/>
+     <item
+        android:id="@+id/share"
+        android:title="分享"/>
+</menu>

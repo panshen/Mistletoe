@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <com.helper.mistletoe.v.snaimageview.v2.SnaImageViewV2
+        android:id="@+id/sistandard_Head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:contentDescription="@string/app_name"
+        android:cropToPadding="true"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/default_head" />
+
+    <LinearLayout
+        android:id="@+id/sistandard_SendStateArea"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/sistandard_SendingState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/sistandard_FailedState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/re_send"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</merge>

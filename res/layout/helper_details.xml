@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_helper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_helper_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:background="#415BA3" >
+
+        <RelativeLayout
+            android:id="@+id/helper_detail_button_back"
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/helper_detail_imageButton_menu"
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageButton_main_fragment_menu"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/menu_press"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <com.helper.mistletoe.v.snaimageview.v2.SnaImageViewV2
+            android:id="@+id/helper_detail_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#76006fe8" />
+
+        <LinearLayout
+            android:id="@+id/helper_detail_linearLayout_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88050505"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <com.helper.mistletoe.v.snaimageview.v2.SnaImageViewV2
+                    android:id="@+id/helper_detail_snaImage_head"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/helper_detail_textView_momeName"
+                    style="@style/Theme_ShadowedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/helper_detail_snaImage_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/helper_detail_textView_readygoooName"
+                    style="@style/Theme_ShadowedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/helper_detail_textView_momeName"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <LinearLayout
+                    android:id="@+id/helper_detail_linearLayout_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:baselineAligned="false" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/helper_detail_imageView_targetCount"
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/targetcount_h" />
+
+                        <TextView
+                            android:id="@+id/helper_detail_textView_targetCount"
+                            style="@style/Theme_ShadowedText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            style="@style/Theme_ShadowedText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/helper_detail_textView_targetCount"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/helper_detail_imageView_helperCount"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/helpercount_h" />
+
+                        <TextView
+                            android:id="@+id/helper_detail_textView_helperCount"
+                            style="@style/Theme_ShadowedText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            style="@style/Theme_ShadowedText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/helper_detail_textView_helperCount"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/helper_detail_imageView_coinCount"
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/coincount_h" />
+
+                        <TextView
+                            android:id="@+id/helper_detail_textView_coinCount"
+                            style="@style/Theme_ShadowedText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            style="@style/Theme_ShadowedText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/helper_detail_textView_coinCount"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/helper_detail_linearLayout_count"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/helper_detail_textView_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/cshaow"
+                        android:gravity="left"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/helper_detail_imageView_hammer"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="42dp"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:id="@+id/helper_detail_imageButton_createTarget"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/create_target_helperdetail"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
